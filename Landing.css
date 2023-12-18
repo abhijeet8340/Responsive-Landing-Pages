@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+html,body{
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+
+}
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#left{
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+}
+#rtop{
+    width: 100%;
+    height: 50%;
+    /* background-color: blue; */
+    display: flex;
+}
+#btop{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8T3JhbmdlfGVufDB8fDB8fHww);
+    background-position: center;
+    background-size: cover;
+}
+
+#rtop_left{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1530&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#rtop_right{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1552089123-2d26226fc2b7?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fE9yYW5nZXxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+#lnavbar a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 500;
+}
+#navbar i{
+    font-size: 1.5rem;
+}
+#lnavbar i{
+    background-color: blue;
+}
+#lnavbar{
+    display: flex;
+    align-items: center;
+}
+
+#text h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#text p{
+    font-size: 1.3rem;
+    font-weight: 600;
+    opacity: .6;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    line-height: 2rem;
+}
+#text a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid #000;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: .8;
+
+}
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+@media (max-width: 500px){
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;         
+    }
+    #main #right{
+        width: 100%;
+    } 
+    #navbar{
+        margin-right: 20px;
+    }
+        
+    
+} 
